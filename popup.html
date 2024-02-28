@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShortsControls</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./popup.js"></script>
+</head>
+<body>
+    <h1>ShortsControls</h1>
+    
+    <section>
+        <h2>Volume</h2>
+        <div id="volume" class="range">
+            <div class="range__line"></div>
+            <div class="range__dot"></div>
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- 
+const currentVolume = JSON.parse(localStorage.getItem('yt-player-volume'))
+const currentVolumeValue = JSON.parse(currentVolume.data)
+localStorage.setItem('yt-player-volume', JSON.stringify({
+    ...currentVolume,
+    data: JSON.stringify({
+        ...currentVolumeValue,
+        volume: 44
+    })
+})) 
+-->

@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: .5rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.range {
+    position: relative;
+    width: min(100% - 2rem, 300px);
+    height: 1rem;
+}
+
+.range__line {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    margin-block: auto;
+    cursor: pointer;
+    transition: .075s;
+    border-radius: .5rem;
+}
+
+.range__line:hover {
+    height: 50%;
+}
+
+.range__dot {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid black;
+    cursor: grab;
+}
